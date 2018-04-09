@@ -89,7 +89,7 @@ function render (html, data, options) {
     '</div>',
     '</div>',
   ].filter(Boolean).join('')
-  return html + template
+  return html + (data.next || data.prev ? template : '')
 }
 
 function css () {
